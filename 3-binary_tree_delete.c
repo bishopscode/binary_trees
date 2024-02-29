@@ -5,9 +5,9 @@
  *
  * Description: long description
  *
- * @tree: argument_1 description
+ * @tree: arg_1 description
  *
- * Return: return description
+ * Return: returns description
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
