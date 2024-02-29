@@ -5,34 +5,34 @@
  *
  * Description: long description
  *
- * @parent: argument_1 description
- * @value: argument_2 description
+ * @parent: arg_1 description
+ * @value: arg_2 description
  *
  * Return: return description
  */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
-	binary_tree_t *new_node, *old_node;
+	binary_tree_t *N_node, *old_node;
 
 	if (parent == NULL)
 		return (NULL);
-	new_node = malloc(sizeof(binary_tree_t));
-	if (new_node == NULL)
+	N_node = malloc(sizeof(binary_tree_t));
+	if (N_node == NULL)
 		return (NULL);
-	new_node->n = value;
-	new_node->left = NULL;
-	new_node->parent = parent;
+	N_node->n = value;
+	N_node->left = NULL;
+	N_node->parent = parent;
 	if (parent->right != NULL)
 	{
 		old_node = parent->right;
-		old_node->parent = new_node;
-		new_node->right = old_node;
+		old_node->parent = N_node;
+		N_node->right = old_node;
 	}
 	else
 	{
-		new_node->right = NULL;
+		N_node->right = NULL;
 	}
-	parent->right = new_node;
+	parent->right = N_node;
 
-	return (new_node);
+	return (N_node);
 }
