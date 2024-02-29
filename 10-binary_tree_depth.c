@@ -5,22 +5,22 @@
  *
  * Description: long description
  *
- * @tree: argument_1 description
+ * @tree: arg_1 description
  *
- * Return: return description
+ * Return: returns description
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-	binary_tree_t *current_node;
+	binary_tree_t *cur_node;
 	size_t depth = 0;
 
 	if (tree == NULL)
 		return (depth);
-	current_node = (binary_tree_t *) tree;
-	while (current_node->parent)
+	cur_node = (binary_tree_t *) tree;
+	while (cur_node->parent)
 	{
 		depth++;
-		current_node = current_node->parent;
+		cur_node = cur_node->parent;
 	}
 	return (depth);
 }
