@@ -5,21 +5,21 @@
  *
  * Description: long description
  *
- * @parent: argument_1 description
- * @value: argument_2 description
+ * @parent: arg_1 description
+ * @value: arg_2 description
  *
  * Return: return description
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	binary_tree_t *new_node;
+	binary_tree_t *N_node;
 
-	new_node = malloc(sizeof(binary_tree_t));
-	if (new_node == NULL)
+	N_node = malloc(sizeof(binary_tree_t));
+	if (N_node == NULL)
 		return (NULL);
-	new_node->n = value;
-	new_node->left = NULL;
-	new_node->right = NULL;
-	new_node->parent = parent;
-	return (new_node);
+	N_node->n = value;
+	N_node->left = NULL;
+	N_node->right = NULL;
+	N_node->parent = parent;
+	return (N_node);
 }
