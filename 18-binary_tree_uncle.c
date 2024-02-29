@@ -5,7 +5,7 @@
  *
  * Description: long description
  *
- * @node: argument_1 description
+ * @node: arg_1 description
  *
  * Return: return description
  */
