@@ -5,10 +5,10 @@
  *
  * Description: long description
  *
- * @tree: argument_1 description
- * @func: argument_2 description
+ * @tree: arg_1 description
+ * @func: arg_2 description
  *
- * Return: return description
+ * Return: returns description
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
