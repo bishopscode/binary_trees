@@ -5,9 +5,9 @@
  *
  * Description: long description
  *
- * @node: argument_1 description
+ * @node: arg_1 description
  *
- * Return: return description
+ * Return: returns description
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
