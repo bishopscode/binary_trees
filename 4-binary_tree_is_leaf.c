@@ -5,9 +5,9 @@
  *
  * Description: long description
  *
- * @node: argument_1 description
+ * @node: arg_1 description
  *
- * Return: return description
+ * Return: returns description
  */
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
